@@ -76,18 +76,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  background-color: var(--fourth);
+  font-size: 1rem;
+  background-color: #8ed173;
   color: #162433;
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
   /*border: 3px solid var(--main-text-color);*/
   border-radius: 50%;
+  border: 5px solid black;
   box-shadow: 2px 2px 20px var(--main-text-color);
 }
 .odd {
-  background-color: var(--second);
+  background-color: orange;
 }
 .even {
-  background-color: var(--third);
+  background-color: violet;
 }
