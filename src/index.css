@@ -12,14 +12,19 @@ code {
     monospace;
 }
 :root {
-  --mid-color: #3096e6;
-  --midish-color: #7dadd2;
-  --main-text-color: #315273;
-  --darkish-color: #3c647b;
-  --light-color: #dfecf3;
-  --second: #8ed173;
-  --third: #cba1d7;
-  --fourth: hsl(27, 80%, 80%);
+  --background-color: #dfe2f3;
+  --button-color: #4f318a;
+  --text-color: #260b59;
+  --border-color: #c2bfdb;
+  --hover-color: #a69492;
+
+  --odd: #b8bedf;
+  --even: #b0cdd9;
+  --zero: #ffe0ae;
+
+  --some2: #f5631a;
+  --some3: #a2abce;
+  --some: #ffa303;
 }
 * {
   padding: 0;
@@ -33,7 +38,7 @@ main {
   padding: 5rem 2rem;
   justify-content: center;
   align-items: center;
-  background-color: var(--light-color);
+  background-color: var(--background-color);
 }
 
 .buttons {
@@ -42,32 +47,38 @@ main {
   padding: 2rem;
 }
 button {
-  background-color: var(--main-text-color);
-  font-size: 1.2em;
+  background-color: var(--button-color);
+  font-size: 1.4em;
+  font-weight: bold;
   border: none;
-  color: var(--light-color);
+  color: var(--background-color);
   padding: 0.8rem;
   margin: 1rem;
   width: 150px;
+  height: 3em;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px var(--darkish-color);
-  transition: all 0.5s;
+  box-shadow: 2px 2px 0px var(--text-color);
+  transition: all 0.3s;
 }
 button:hover {
-  background-color: var(--midish-color);
-  color: #162433;
+  background-color: var(--hover-color);
+  color: var(--text-color);
+}
+header {
+  background-color: var(--hover-color);
+  color: var(--text-color);
+  height: 100px;
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 10px solid var(--zero);
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    var(--midish-color),
-    var(--darkish-color)
-  );
-  color: var(--darkish-color);
+  background-color: var(--border-color);
+  color: var(--text-color);
   height: 100px;
   padding: 2rem;
 }
@@ -76,19 +87,21 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
-  background-color: #8ed173;
-  color: #162433;
-  height: 4rem;
-  width: 4rem;
+  font-size: 3rem;
+
+  background-color: var(--zero);
+  color: var(--text-color);
+  height: 25vh;
+  width: 25vh;
   /*border: 3px solid var(--main-text-color);*/
   border-radius: 50%;
-  border: 5px solid black;
-  box-shadow: 2px 2px 20px var(--main-text-color);
+  border: 5px solid var(--hover-color);
+  box-shadow: 2px 2px 20px var(--odd);
+  transition: all ease 1;
 }
 .odd {
-  background-color: orange;
+  background-color: var(--odd);
 }
 .even {
-  background-color: violet;
+  background-color: var(--even);
 }

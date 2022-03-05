@@ -1,6 +1,7 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from "react-redux";
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 import * as actionTypes from "./components/store/actions";
 
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <main>
         <div className={count === 0 ? "circle"
           : count % 2 === 0 ? "circle even"
@@ -51,13 +53,14 @@ function App() {
           <h1>{count}</h1>
         </div>
         <div className="buttons">
-          <button className="add_one" onClick={clickHandler} >+  add  1 </button>
-          <button className="add_five" onClick={clickHandler}>+ add 5</button>
-          <button className="remove_one" onClick={removeOneHandler} >- REMOVE 1</button>
-          <button className="remove_five" onClick={removeFiveHandler}>- Remove 5</button>
-          <button className="reset" onClick={clickHandler} >Reset</button>
+          <button className="add_one" onClick={clickHandler} > add  +1 </button>
+          <button className="add_five" onClick={clickHandler}> add  +5</button>
+          <button className="remove_one" onClick={removeOneHandler} >remove  -1</button>
+          <button className="remove_five" onClick={removeFiveHandler}>remove  -5</button>
+          <button className="reset" onClick={clickHandler} >reset  0</button>
         </div>
       </main >
+      <Footer />
     </div >
   );
 }
