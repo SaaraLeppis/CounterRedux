@@ -1,4 +1,3 @@
-import './App.css';
 import { useSelector, useDispatch } from "react-redux";
 import Header from "./components/Header"
 import Footer from "./components/Footer"
@@ -8,21 +7,10 @@ import * as actionTypes from "./components/store/actions";
 function App() {
   const count = useSelector((state) => state.counter)
   const dispatch = useDispatch();
-  //const [list, setList] = useState("circle");
-
-  /*  useEffect(() => {
-     setList(
-       count % 2 === 0 ? "circle even"
-         : count === 0 ? "circle"
-           : "circle odd")
- 
-   }, [])// eslint-disable-line react-hooks/exhaustive-deps */
 
   const clickHandler = (e) => {
-    console.log(count, "count");
+    //console.log(count, "count");
     //console.log(list, "in clickhandler")
-    const btnValue = e.target.className.toUpperCase();
-    console.log(btnValue);
     dispatch({
       type: e.target.className.toUpperCase(),
     })

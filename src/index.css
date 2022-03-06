@@ -21,10 +21,6 @@ code {
   --odd: #b8bedf;
   --even: #b0cdd9;
   --zero: #ffe0ae;
-
-  --some2: #f5631a;
-  --some3: #a2abce;
-  --some: #ffa303;
 }
 * {
   padding: 0;
@@ -93,11 +89,9 @@ footer {
   color: var(--text-color);
   height: 25vh;
   width: 25vh;
-  /*border: 3px solid var(--main-text-color);*/
   border-radius: 50%;
   border: 5px solid var(--hover-color);
   box-shadow: 2px 2px 20px var(--odd);
-  transition: all ease 1;
 }
 .odd {
   background-color: var(--odd);

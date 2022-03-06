@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# REACT app with Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my first react app with REDUX. Task, @ Helsinki Business College, was to build earlier made counter app with Redux without using google, only own notes and own projects in GitHub.
+Teacher, [Margit Tennosaar](https://github.com/margittennosaar), gave us hint: '`react-redux, store & provider, reducers, dispatching actions, useSelector, useDispatch`'.
 
-## Available Scripts
+## What the 'Counter app' is about?
 
-In the project directory, you can run:
+By clicking buttons you can add or remove 1 or 5 to counter and reset it. Background of the circle changes if value is even or odd or zero. Counter value's minimum is zero, so it never shows negative values.
 
-### `npm start`
+## How it was built?
 
-Runs the app in the development mode.\
+To start building the project first
+
+- installed react:
+
+  ```shell
+  npx install create-react-app
+  ```
+
+- then redux
+
+  ```shell
+  npm install redux
+  ```
+
+- then react-redux
+
+  ```shell
+  npm install redux
+  ```
+
+### Used
+
+- REACT
+- Redux
+- JSX (JavaScript)
+- CSS
+
+## To run the app
+
+```shell
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## What I learned and to remember
 
-### `npm test`
+To start project from scratch forces to think all the steps and for me it is the best way to learn!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Favicon (named `favicon.ico`) directly under public folder and
+`<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />`
+to index.html
 
-### `npm run build`
+To resize pictures in md.syntax see how done here, below!!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="./src/assets/Screenshot_zero.png" width="300" alt="zero state">
+<img src="./src/assets/Screenshot_even.png" width="300" alt= "even state">
+<img src="./src/assets/Screenshot_odd.png" width="300" alt= "odd state">
